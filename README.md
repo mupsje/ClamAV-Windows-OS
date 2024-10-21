@@ -25,9 +25,56 @@ Once you have installed ClamAV, navigate to the installation folder and find for
   - Find for #LogFile "C:\Program Files\ClamAV\clamd.log" line and remove the leading # in it to enable the logging. Also, correct the ClamAV installation path in it.
 
       ![image](https://github.com/user-attachments/assets/12c2d60f-aa65-4977-9f51-2367eed13715)
+    
   - Find for `TCPSocket 3310` and make sure it is not commented out.
     Also, find for `TCPAddr localhost` and make sure it is not commented out.
   - Save the file and exit.
+
+  **Modify freshclam.conf**
+
+  - Open `freshclam.conf` with a text editor.
+  - Comment/Remove the word `Example` in line number 8. (If you have commented out it, it should look like `#Example`)
+
+      ![image](https://github.com/user-attachments/assets/5c9086cc-3b2c-42b0-ac8a-4de7e0b07dd2)
+
+  - Find for `#UpdateLogFile "C:\Program Files\ClamAV\freshclam.log"` line and remove the leading `#` in it to enable the logging. Also, correct the ClamAV installation path in it.
+
+      ![image](https://github.com/user-attachments/assets/c6f74b40-5d54-4b88-a90a-a0f7da3cbf07)
+
+  - Find for `#DatabaseDirectory "C:\Program Files\ClamAV\database"` line and remove the leading `#` in it to enable the logging. Also, correct the ClamAV installation path in it.
+
+      ![image](https://github.com/user-attachments/assets/8729fcf9-7749-4867-b4f1-3eeb89bc1d5a)
+
+  - Save the file and exit.
+    
+**4. Install ClamAV as a windows service.**
+Open the Windows Command Prompt in Administrator Mode and navigate to the installation directory *(eg: C:\ClamAV)*.
+
+Run the following command to install as a service.
+`clamd.exe --install`
+
+![image](https://github.com/user-attachments/assets/cb78ab0c-2f8a-4f9a-9cc3-59ddb94bf299)
+
+
+**5. Update the ClamAV database.**
+Open the Windows Command Prompt in Administrator Mode and navigate to the installation directory *(eg: C:\ClamAV)*.
+
+Run the following command to update the ClamAV database.
+`freshclam.exe`
+
+![image](https://github.com/user-attachments/assets/897a1fa1-456e-4b13-a417-c4c1ad57bfd2)
+
+**6. Running the ClamAV service.**
+
+Open the Windows Services (execute `services.msc` command in the run window to open the windows services) and start the ClamAV service,
+Service name: `ClamAV ClamD`
+
+![image](https://github.com/user-attachments/assets/0aacdd8c-dcc8-412d-b193-29810d64a5db)
+
+Now the ClamAV service is up and running.
+
+from: https://medium.com/aeturnuminc/clamav-install-on-windows-5971358b2bc7
+
 
 
 
