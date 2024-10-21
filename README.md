@@ -22,7 +22,7 @@ Once you have installed ClamAV, navigate to the installation folder and find for
   - Find for #LogFile "C:\Program Files\ClamAV\clamd.log" line and remove the leading # in it to enable the logging. Also, correct the ClamAV installation path in it.
 
       ![image](https://github.com/user-attachments/assets/12c2d60f-aa65-4977-9f51-2367eed13715)
-  - Find for ##TCPSocket 3310 and make sure it is not commented out.
+  - Find for ## TCPSocket 3310 and make sure it is not commented out.
     Also, find for ##TCPAddr localhost and make sure it is not commented out.
   - Save the file and exit.
 
