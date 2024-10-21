@@ -26,6 +26,13 @@ Once you have installed ClamAV, navigate to the installation folder and find for
     Also, find for ##TCPAddr localhost and make sure it is not commented out.
   - Save the file and exit.
 
+```conf
+# Example freshclam.conf file
+DatabaseMirror db.local.clamav.net
+DatabaseOwner clamav
+LogFile /var/log/clamav/freshclam.log
+```
+
 
 
 
