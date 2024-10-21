@@ -66,12 +66,29 @@ Run the following command to update the ClamAV database.
 
 **6. Running the ClamAV service.**
 
+To install the services, first use the command:
+```
+clamd --install-service
+```
+Then use ```net start clamd``` and ```net stop clamd``` to start/stop the service.
+
+To uninstall the service, use:
+```
+clamd --uninstall-service
+```
+Services can also be managed via the Services application on Windows.
+
 Open the Windows Services (execute `services.msc` command in the run window to open the windows services) and start the ClamAV service,
 Service name: `ClamAV ClamD`
 
 ![image](https://github.com/user-attachments/assets/0aacdd8c-dcc8-412d-b193-29810d64a5db)
 
 Now the ClamAV service is up and running.
+
+
+
+
+
 
 from: https://medium.com/aeturnuminc/clamav-install-on-windows-5971358b2bc7
 
