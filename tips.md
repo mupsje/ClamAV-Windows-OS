@@ -6,11 +6,11 @@ Following steps demonstrate how to improve the signatures in your existing ClamA
   - Add the following lines at the end of the file:
     ```
     DatabaseCustomURL http://ftp.swin.edu.au/sanesecurity/foxhole_generic.cdb
-DatabaseCustomURL http://ftp.swin.edu.au/sanesecurity/foxhole_filename.cdb
-DatabaseCustomURL http://ftp.swin.edu.au/sanesecurity/foxhole_all.cdb
-DatabaseCustomURL http://ftp.swin.edu.au/sanesecurity/foxhole_js.cdb
-DatabaseCustomURL http://ftp.swin.edu.au/sanesecurity/badmacro.ndb
-DatabaseCustomURL http://ftp.swin.edu.au/sanesecurity/bofhland_malware_attach.hdb
-```
+    DatabaseCustomURL http://ftp.swin.edu.au/sanesecurity/foxhole_filename.cdb
+    DatabaseCustomURL http://ftp.swin.edu.au/sanesecurity/foxhole_all.cdb
+    DatabaseCustomURL http://ftp.swin.edu.au/sanesecurity/foxhole_js.cdb
+    DatabaseCustomURL http://ftp.swin.edu.au/sanesecurity/badmacro.ndb
+    DatabaseCustomURL http://ftp.swin.edu.au/sanesecurity/bofhland_malware_attach.hdb
+    ```
 
   - Restart freshclam.
