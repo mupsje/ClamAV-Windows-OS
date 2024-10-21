@@ -10,7 +10,7 @@ You can download the latest stable version of ClamAV from the below link. https:
   - If you have downloaded the .zip version of the installation package, unzip it into a directory of your windows machine. eg: C:\ClamAV
 
 3. Configure the ClamAV.
-Once you have installed ClamAV, navigate to the installation folder and find for conf_examples folder. You can see the clamd.conf.sample file and freshclam.conf.sample config file inside the conf_examples folder. Then copy those two files to the installation directory. (eg: C:\ClamAV)
+Once you have installed ClamAV, navigate to the installation folder and find for `conf_examples` folder. You can see the `clamd.conf.sample` file and `freshclam.conf.sample` config file inside the __conf_examples__ folder. Then copy those two files to the installation directory. (eg: C:\ClamAV)
   - Rename the clamd.conf.sample to **clamd.conf
   - Rename freshclam.conf.sample to freshclam.conf
 
@@ -22,16 +22,11 @@ Once you have installed ClamAV, navigate to the installation folder and find for
   - Find for #LogFile "C:\Program Files\ClamAV\clamd.log" line and remove the leading # in it to enable the logging. Also, correct the ClamAV installation path in it.
 
       ![image](https://github.com/user-attachments/assets/12c2d60f-aa65-4977-9f51-2367eed13715)
-  - Find for ## TCPSocket 3310 and make sure it is not commented out.
-    Also, find for ##TCPAddr localhost and make sure it is not commented out.
+  - Find for `TCPSocket 3310` and make sure it is not commented out.
+    Also, find for `TCPAddr localhost` and make sure it is not commented out.
   - Save the file and exit.
 
-```conf
-# Example freshclam.conf file
-DatabaseMirror db.local.clamav.net
-DatabaseOwner clamav
-LogFile /var/log/clamav/freshclam.log
-```
+
 
 
 
