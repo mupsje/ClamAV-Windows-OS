@@ -70,7 +70,7 @@ To install the services, first use the command:
 ```
 clamd --install-service
 ```
-Then use ```net start clamd``` and ```net stop clamd``` to start/stop the service.
+Then use bash```net start clamd``` and ```net stop clamd``` to start/stop the service.
 
 To uninstall the service, use:
 ```
